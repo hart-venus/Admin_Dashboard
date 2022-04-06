@@ -18,12 +18,10 @@ ul {
 
 li {
   margin: 20px 5px;
-  padding: 2px;
+  height: 24px;
+  padding-left: 2px;
 }
 
-li svg{
-  margin: auto;
-}
 
 .container {
   height: 100vh;
@@ -34,6 +32,7 @@ li svg{
 
 .sidebar {
   background-color: rgb(73, 73, 172);
+  z-index: 1;
   grid-row-start: 1;
   grid-row-end: 3;
   display: grid;
@@ -58,6 +57,7 @@ li svg{
 .search {
   background-color: white;
   grid-column: 2, 3;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.37));
 }
 
 .projects {
