@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 body, html {
-  padding: 0;
-  height: 100vh;
-  margin: 0;
   font-family: 'Roboto', sans-serif;
+  height: 1fr;
 }
 
 ul {
@@ -14,14 +17,19 @@ ul {
 }
 
 li {
-  margin: 20px 0px;
+  margin: 20px 5px;
+  padding: 2px;
+}
+
+li svg{
+  margin: auto;
 }
 
 .container {
   height: 100vh;
   display: grid;
   grid-template-columns: 1.5fr 5fr;
-  grid-template-rows: 1.25fr 5fr;
+  grid-template-rows: 175px auto;
 }
 
 .sidebar {
@@ -29,10 +37,12 @@ li {
   grid-row-start: 1;
   grid-row-end: 3;
   display: grid;
+
   grid-template-rows: 6fr 3fr;
 }
 
 #links {
+  height: 1fr;
   padding: 40px 40px;
   color: white;
   display: grid;
@@ -42,6 +52,7 @@ li {
 
 #logo {
   font-size: 48px;
+  width: 300px;
 }
 
 .search {
