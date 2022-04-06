@@ -58,8 +58,26 @@ li {
   background-color: white;
   grid-column: 2, 3;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.37));
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 40px auto;
+  padding: 40px 60px;
 }
 
+.search input {
+  background-color: rgb(200, 209, 255);
+  border: 0px transparent;
+  margin-left: 16px;
+  width: 90%;
+  border-radius: 36px;
+  padding: 10px;
+  height: 42px;
+  font-size: 28px;
+}
+
+.searchbox {
+  width: 100%;
+}
 .projects {
   background-color: aliceblue;
 }
