@@ -27,7 +27,7 @@ li {
   height: 100vh;
   display: grid;
   grid-template-columns: 1.5fr 5fr;
-  grid-template-rows: 200px auto;
+  grid-template-rows: 220px auto;
 }
 
 .sidebar {
@@ -44,6 +44,7 @@ li {
   height: 1fr;
   padding: 40px 40px;
   color: white;
+  
   display: grid;
   font-weight: 700;
   font-size: 24px;
@@ -120,5 +121,49 @@ li {
   gap: 20px;
 }
 .projects {
+  padding: 40px 20px;
   background-color: aliceblue;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
+
+.projects p {
+  font-weight: bold;
+  margin-bottom: 4px;
+  font-size: 24px;
+}
+.card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  width: minmax(475px, 1fr);
+  height: 300px;
+  padding: 30px 20px;
+  border-left: 18px solid salmon;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.123));
+  display: grid;
+  grid-template-rows: 6fr 1fr;
+}
+.card p {
+  font-weight: 100;
+  font-size: 18px;
+}
+.card h3 {
+  font-size: 22px;
+}
+.mainprojects {
+  grid-row: 1/3;
+}
+.svgcontainer {
+  display: grid;
+  grid-template-columns: 24px 24px 24px;
+  gap: 16px;
+  margin-left: 75%;
+}
+.cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(475px, 1fr));
+}
+
