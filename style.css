@@ -83,7 +83,7 @@ li {
 }
 .profile {
   display: grid;
-  grid-template-columns: 24px 50px auto;
+  grid-template-columns: 30px 50px auto;
   gap: 25px;
   align-items: center;
   font-weight: bold;
@@ -124,7 +124,7 @@ li {
   padding: 40px 20px;
   background-color: aliceblue;
   display: grid;
-  gap: 20px;
+  column-gap: 20px;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
@@ -167,3 +167,53 @@ li {
   grid-template-columns: repeat(auto-fit, minmax(475px, 1fr));
 }
 
+.announcementcontainer {
+  background-color: white;
+  border-radius: 18px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.123));
+  height: 80%;
+  display: grid;
+  grid-template-rows: 1fr 0.1fr 1fr 0.1fr 1fr;
+  padding: 12px;
+  row-gap: 8px;
+}
+.border {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.103);
+}
+.announcement p{
+  font-weight: 100;
+  font-size: 14px;
+}
+.profilecontainer {
+  padding: 8px 16px;
+  background-color: white;
+  display: grid;
+  row-gap: 20px;
+  border-radius: 18px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.123));
+
+}
+.profilee {
+  display: grid;
+  grid-template-columns: 50px auto;
+}
+.profile p{
+  font-weight: 100;
+  font-size: 14px;  
+}
+.text h5{
+  font-size: 16px;
+}
+.profilee img{
+  height: 50px;
+  border-radius: 50px;
+}
+.profilee {
+  column-gap: 20px;
+}
+.profilee p{
+  font-weight: 100;
+  font-size: 16px;
+}
